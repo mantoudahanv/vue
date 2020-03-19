@@ -22,25 +22,28 @@ module.exports = {
       // avbar: false  用于禁用所有页面导航栏
       
       
-        nav: [
-          { text: '主页', link: '/' },
-          { text: 'Guide', link: '/guide/' },
-          {
-            text: '其他文档',
-            ariaLabel: 'Language Menu',
-            //嵌套下拉分组
-            items: [
-              { text: '直播文档', link: 'css2' },
-              { text: '直播操作', link: 'css1' },
-              //删除后非嵌套
-              { text: '分组', items: [
-                { text: 'Chinese', link: '/language/chinese/' },
-                { text: 'Japanese', link: '/language/japanese/' }
-              ] },
-            ]
-          },
-        ],
-        // 多个侧边栏
+      nav: [
+        { text: '主页', link: '/' },
+        { text: 'Guide', link: '/guide/' },
+        {
+          text: '其他文档',
+          ariaLabel: 'Language Menu',
+          //嵌套下拉分组
+          items: [
+            { text: '直播文档', link: '/css/css2/' },
+            { text: '直播操作', link: '/css/css1/' },
+            //删除后非嵌套
+            { text: '分组', items: [
+              { text: 'Chinese', link: '/language/chinese/' },
+              { text: 'Japanese', link: '/language/japanese/' }
+            ] },
+          ]
+        },
+        { text: 'External', link: 'https://google.com' },
+        { text: '关于', link: '/about/' }
+      ],
+      // 多个侧边栏
+
 
   sidebarDepth: 2,
   sidebar: 'auto'
