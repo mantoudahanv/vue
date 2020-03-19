@@ -10,6 +10,7 @@ module.exports = {
       ['link', { rel: 'icon', href: '/favicon.ico' }]
     ],
     base:'/vue/',
+
     themeConfig: {
       //调整github项目地址
       repo: 'https://github.com/mantoudahanv/vue.github.io',
@@ -20,7 +21,7 @@ module.exports = {
       // lastUpdated: '上次更新', // string | boolean
       // avbar: false  用于禁用所有页面导航栏
       
-      //sidebar:true,//自动生成侧边栏
+      sidebarDepth: 2,//自动生成侧边栏
         nav: [
           { text: '主页', link: '/' },
           { text: 'Guide', link: '/guide/' },
@@ -40,27 +41,29 @@ module.exports = {
           },
           { text: 'External', link: 'https://google.com' },
         ],
+
         // 多个侧边栏
-      // sidebar: {
-      //   '/css/': [
-      //     '',     /* /foo/ */
-      //     'css1',  /* /foo/one.html */
-      //     'css2'   /* /foo/two.html */
-      //   ],
+      sidebar: {
+        '/css/': [
+          '',     /* /foo/ */
+          'css1',  /* /foo/one.html */
+          'css2'   /* /foo/two.html */
+          
+        ],
   
-      //   '/javascript/': [
-      //     '',      /* /bar/ */
-      //     'javascript1', /* /bar/three.html */
-      //     'javascript2'   /* /bar/four.html */
-      //   ],
+        '/javascript/': [
+          '',      /* /bar/ */
+          'javascript1', /* /bar/three.html */
+          'javascript2'   /* /bar/four.html */
+        ],
   
-      //   // fallback deny all
-      //   '/': [
-      //     '',        /* / */
-      //     '/about/', /* /contact.html */
-      //     'about/test'    /* /about.html */
-      //   ]
-      // }
+        // fallback deny all
+        '/': [
+          '',        /* / */
+          '/about/', /* /contact.html */
+          'about/test'    /* /about.html */
+        ]
+      }
 
       }
     }
